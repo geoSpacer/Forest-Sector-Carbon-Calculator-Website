@@ -1,0 +1,42 @@
+' Program: LandCarb
+' Version: 3
+' File: DecayPool.prm
+' Synopsis: Parameters for dead and stable pools.
+' Modified: 07-23-14
+'                                                                                                                                            Light Reaching Pool (Percent Of) 
+'                                                      Average   Stable  Area   Moist                                                        -------------------------------- 
+' Model File                           Temp  Moist___  Transfer  Decay   Mass   Store  Matric___  Diffuse__  Temp_____  Drying    Cohort     Full  Below  Below  Below  Below 
+'             Pool              Q10    Opt   Min  Max  Rate      Rate    Ratio  Max    Shape Lag  Shape Lag  Shape Lag  Constant  ClearRate        UTree  LTree  Shrub  Herb  
+                                                                                                                                                                              
+  ML02   7    DeadFoliage       2.000  45     30  330  0.0490    0.0000  20.00  300     35.0   0    15    4     15   4   0.00150   0.600       5     10     10    10     65   
+  ML02   7    DeadFineRoot      2.000  45     30  450  0.0731    0.0000   0.00  400     35.0   0    15    4     15   4   0.00000   0.600       0      0      0     0      0   
+  ML02   7    SalvSnagSapWood   2.000  45     30  250  0.0960    0.0000   0.08  225     35.0   0    15    4     15   4   0.00057   0.300      25     50     25     0      0   
+  ML02   7    SalvSnagHeartWood 2.000  45     30  200  0.0960    0.0000   0.08  175     35.0   0    15    4     15   4   0.00055   0.300      25     50     25     0      0   
+  ML02   7    SnagSapWood       2.000  45     30  350  0.0430    0.0000   0.08  300     35.0   0    15    4     15   4   0.00066   0.300      25     50     25     0      0   
+  ML02   7    SnagHeartWood     2.000  45     30  350  0.0240    0.0000   0.08  300     35.0   0    15    4     15   4   0.00064   0.300      25     50     25     0      0   
+  ML02   7    SalvLogSapWood    2.000  45     30  200  0.0743    0.0000   0.10  250     35.0   0    15    4     15   4   0.00055   0.300       5     10     10    50     25   
+  ML02   7    SalvLogHeartWood  2.000  45     30  200  0.0743    0.0000   0.10  250     35.0   0    15    4     15   4   0.00053   0.300       5     10     10    50     25   
+  ML02   7    LogSapWood        2.000  45     30  350  0.0277    0.0000   0.10  400     35.0   0    15    4     15   4   0.00065   0.100       5     10     10    50     25   
+  ML02   7    LogHeartWood      2.000  45     30  350  0.0148    0.0000   0.10  400     35.0   0    15    4     15   4   0.00063   0.050       5     10     10    50     25   
+  ML02   7    DeadBranch        2.000  45     30  220  0.0099    0.0000   0.10  200     35.0   0    15    4     15   4   0.00140   0.600       5     10     10    10     65   
+  ML02   7    DeadCRoot         2.000  45     30  220  0.0342    0.0000   0.00  200     35.0   0    15    4     15   4   0.00000   0.300       0      0      0     0      0   
+  ML02   7    StableFoliage     2.000  45     30  440  0.000     0.2000  20.00  400     35.0   0    15    4     15   4   0.00100   0.000       5     10     10    10     65   
+  ML02   7    StableWood        2.000  45     30  660  0.000     0.0500   0.10  600     35.0   0    15    4     15   4   0.00090   0.000       5     10     10    10     65   
+  ML02   7    StableSoil1       2.000  45     15  110  0.000     0.0200   0.00  100     35.0   0    15    4     15   4   0.00000   0.001       0      0      0     0      0   
+  ML02   7    StableSoil2       2.000  45     15  110  0.000     0.0200   0.00  100     35.0   0    15    4     15   4   0.00000   0.000       0      0      0     0      0   
+  ML02   7    SurfaceCharcoal       0   0      0    0  0.003     0.0000   0.00    0       0   0     0    0      0   0   0.00000   0.100        0      0      0     0      0   
+  ML02   7    BuriedCharcoal        0   0      0    0  0.003     0.0020   0.00    0       0   0     0    0      0   0   0.00000   0.100        0      0      0     0      0   
+
+' StableFoliage decay rate was: .2000
+' StableWood decay rate was:    .0500
+' StableSoil decay rate was:    .0200
+'notes:
+' the matric shape parameter was increased so that the minimum moisture to support decay is about 30% MC
+' the area mass ratio was increased for snags as they are too dry with old value of 0.05
+' the drying rate constant for dead foliage and dead branches was increased so that summer decay is reduced
+' the drying rate of snags is higher than for logs, and salvagable is lower than unsalvagable, and SW is greater than HW
+'the moist store maximum for log SW and HW was increased to cause more water logging
+'the moist store maximum for snags was decreased to eliminate any period of water logging
+'the drying rates of logs and snags are set to be equal, snags will dry faster because they have more light
+'but that is already accounted for in the radiation balance of snags.
+'these parameters are for the version of the model that has a detailed light profile for each dead pool

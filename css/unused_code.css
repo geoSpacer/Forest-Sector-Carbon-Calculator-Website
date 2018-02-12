@@ -1,0 +1,299 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Veranda, arial, sans-serif;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    min-height: 100%; 
+    margin-bottom: 1px;
+}
+
+body {
+    background-image: url('../images/background.png');
+    background-repeat: repeat;
+    text-align: center;
+    font-size: 11pt;
+    line-height: 1.5em;
+}
+
+#background {
+    width: 920px;
+    margin: 0 auto;
+    background-color: #D7D6AE;
+    background-repeat: repeat-y;
+    text-align: left;
+}
+
+#inputForm {
+    margin-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* start css for simpleBits mini tabe */
+
+.container {
+	padding: 30px;
+	margin: 0px 0 0px 0;
+	background: #D7D6AE;
+	}
+
+#minitabs {
+	margin: 0;
+	padding: 0 0 20px 10px;
+	border-bottom: 1px solid #333;
+	}
+
+#minitabs li {
+	margin: 0; 
+	padding: 0;
+	display: inline;
+	list-style-type: none;
+	}
+	
+#minitabs a:link, #minitabs a:visited {
+	float: left;
+	font-size: 13px;
+	line-height: 14px;
+	font-weight: bold;
+	margin: 0 10px 4px 10px;
+	padding-bottom: 2px;
+	text-decoration: none;
+	color: #999;
+	}
+
+#minitabs a.active:link, #minitabs a.active:visited, #minitabs a:hover {
+	border-bottom: 4px solid #333;
+	padding-bottom: 2px;
+	background: #D7D6AE;
+	color: #333;
+	}
+
+/* relative font-size version */
+
+/*#miniflex {*/
+/*	width: 100%;*/
+/*	float: left;*/
+/*	font-size: small; /* could be specified at a higher level */*/
+/*	margin: 0;*/
+/*	padding: 0 10px 0 10px;*/
+/*	border-bottom: 1px solid #333;*/
+/*	}*/
+/**/
+/*#miniflex li {*/
+/*	float: left;*/
+/*	margin: 0; */
+/*	padding: 0;*/
+/*	display: inline;*/
+/*	list-style: none;*/
+/*	}*/
+/*	*/
+/*#miniflex a:link, #miniflex a:visited {*/
+/*	float: left;*/
+/*	font-size: 85%;*/
+/*	line-height: 20px;*/
+/*	font-weight: bold;*/
+/*	margin: 0 10px 0 10px;*/
+/*	text-decoration: none;*/
+/*	color: #999;*/
+/*	}*/
+/**/
+/*#miniflex a.active:link, #miniflex a.active:visited, #miniflex a:hover {*/
+/*	border-bottom: 4px solid #333;*/
+/*	padding-bottom: 2px;*/
+/*	color: #333;*/
+/*	}*/
+
+/* end mini tab css */
+
+#left {
+    float: left;
+    width: 200px;
+    margin-left: 10px;
+}
+
+#logo {
+/*    background-image: url('../images/logo.png');
+    background-repeat: no-repeat;*/
+    margin-top: 44px;
+    margin-left: 10px;
+    margin-bottom: 43px;
+    width: 180px;
+    height: 300px;
+}
+
+img.noBorder { border: none; }
+
+#sep {
+    margin-left: 10px;
+    border-top: 3px solid #000;
+}
+
+#menu ul {
+    margin-left: 10px;
+    list-style: none;
+    text-align: right;
+}
+
+#menu ul li {
+    position: relative;
+    line-height: 1.4em;
+    padding: 10px 10px 10px 0px;
+    border-bottom: 1px solid #aaa;
+}
+
+#menu li ul {
+    position: absolute;
+    left: 180px;
+    top: -1px;
+    display: none;
+    border: 1px solid black;
+}
+
+#menu ul li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+#menu ul li ul li {
+    width: 180px;
+    background-color: #f7f7f7;
+    padding-left: 5px;
+    padding-top: 10px;
+    text-align: left;
+}
+
+#menu ul li ul li a {
+}
+
+#menu li:hover ul {
+    display: block;
+}
+
+#menu ul li a:hover {
+    color: #ed2024;
+}
+
+/* Fix IE. Hide from IE Mac \*/
+* html ul li { float: left; height: 1%; }
+* html ul li a { height: 1%; }
+/* End */
+
+#right {
+    float: right;
+    width: 700px;
+    margin-right: 10px;
+}
+
+#centers ul {
+    list-style: none;
+    text-align: center;
+}
+
+#centers ul li {
+    display: block;
+    font-size: 8.5pt;
+    line-height: 1.5em;
+    float: left;
+    width: 175px;
+    margin-top: 0.4cm;
+    margin-bottom: 0.4cm;
+}
+
+#splash {
+    clear: both;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 3px solid black;
+    width: 699px;
+    height: 287px;
+}
+
+#feature {
+    padding: 10px 10px 10px 15px;
+}
+
+#feature h2 {
+    font-size: 130%;
+    margin-bottom: 10px;
+}
+
+#feature h3 {
+    border-bottom: 1px dotted #888;
+    font-size: 110%;
+    color: #891218; 
+    margin-bottom: 5px;
+    margin-top: 15px;
+    margin-right: 5px;
+}
+
+#feature blockquote {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+#feature a:link, #feature a:visited, #feature a:hover,
+#footer a:link, #footer a:visited, #footer a:hover {
+    text-decoration:none;
+}
+
+#feature a:link, #footer a:link {
+  color: #036; 
+  border-bottom: 1px dotted #6699cc; 
+}
+
+#feature a:visited, #footer a:visited { 
+  color: #69c; 
+  border-bottom: 1px dotted #6699cc; 
+}
+
+#feature a:hover, #footer a:hover { 
+  color: #036; 
+  border-bottom: 1px solid #6699cc; 
+}
+
+#feature ul, #feature ol { 
+    list-style-position: outside;
+}
+
+#feature ul {
+    list-style-type: disc;
+    margin-left: 25px;
+}
+
+#feature ol {
+    list-style-type: decimal;
+    margin-left: 35px;
+}
+
+#feature li {
+    height: auto;
+    float: none;
+    display: list-item;
+}
+
+#feature p {
+    margin-bottom: 10px;
+}
+
+#footer {
+    clear: both;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 5px;
+    background-color: white;
+    border-top: 1px solid black;
+    text-align: center;
+    font-size: 80%;
+}
+
+#footer_2 {
+    margin-left: 10px;
+    margin-right: 10px;
+    border-bottom: 2px solid black;
+}

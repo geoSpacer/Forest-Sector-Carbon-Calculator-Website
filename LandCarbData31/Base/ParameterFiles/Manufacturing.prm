@@ -1,0 +1,22 @@
+' Version: 3         
+' File: Manufacturing.prm
+' Synopsis: Provides annual values for (forest product) manufacturing parameters.
+' Note:  You must specify default values for parameters; do this by using the year 0000.
+'        Then specify specific values for any years you wish.
+'        You don't have to specify each year. During simulation, if LandCarb is looking
+'        for a year that is not listed, it will use the LATEST year listed
+'        that is LESS than the year it is looking for.
+' Note: Values are in PERCENT
+' Note: Year is given as CALENDAR YEAR of the simulation.
+' Note: Sum of structural wood, pulp wood and external biofuel fractions must be <= 100
+'       Sum of wood to structural, hogg fuel and chip fractions must be <= 100
+ 
+
+# Model File    Year   BarkTo  External  Structural      Pulp      WoodTo    WoodTo    WoodTo  Paper        Pulp     Biofuel
+#                       Mulch   Biofuel        Wood      Wood  Structural  HoggFuel     Chips    Man     Biofuel  Conversion 
+#                    Fraction  Fraction    Fraction  Fraction    Fraction  Fraction  Fraction  Effic  Conversion  Efficiency
+
+    ML02  3     0000       10         2          93        5          65        15        20     55          25          60
+
+# Note: Year 0000 is required. These are default values used for years prior to first one specified.
+

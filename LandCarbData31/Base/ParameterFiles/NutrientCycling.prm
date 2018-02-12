@@ -1,0 +1,18 @@
+' Program: LandCarb
+' Version: 3
+' File: NutrientCycling.prm
+' Synopsis: Defines nutrient cycling parameters.
+
+' Model File  Nutrient   Calendar    Nutrient
+'                Zone        Year   Factor (%)
+'
+                                                                                                                                   
+   ML02  3         1        0000      30
+   ML02  3         1        1952      50
+   ML02  3         1        1955      70
+
+   ML02  3         2        0000      85
+   ML02  3         2        1955      80
+
+   ML02  3         3        0000      67
+   ML02  3         3        1971      68

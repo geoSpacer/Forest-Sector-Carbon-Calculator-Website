@@ -1,0 +1,20 @@
+' Program: LandCarb
+' Version: 3
+' File: SoilZones.prm
+' Synopsis: Maintains soil information for each soil zone of the study area.
+' Note: This information is used in conjunction with a soil zone grid to provide
+' the spatial context for soil characteristics.
+' Note: Any soil texture type referenced here must be defined in Soil.prm;
+' the program is case-sensitive, so capitalization is important.
+' Last Modified: Dec.10.07
+
+' Model File  Soil     SoilTexture    Soil   Rocks  Drainage 
+'             Zone                    Depth         Factor   
+                                                       
+'  ML02    1     1      loam            101     5       3     
+'  ML02    1     1      loamySand        101     5       3     
+  ML02    1     1      loamySand       101     5       3     
+  ML02    1     2      sandyLoam       102     4       4     
+  ML02    1     3      loam            103     3       5     
+  ML02    1     4      siltyClayLoam   104     2       6     
+  

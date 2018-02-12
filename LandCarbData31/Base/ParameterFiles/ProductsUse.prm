@@ -1,0 +1,20 @@
+' Version: 3         
+' File: ProductsUse.prm
+' Synopsis: Provides annual values for (forest product) productsUse parameters.
+' Note:  You must specify default values for parameters; do this by using the year 0000.
+'        Then specify specific values for any years you wish.
+'        You don't have to specify each year. During simulation, if LandCarb is looking
+'        for a year that is not listed, it will use the LATEST year listed
+'        that is LESS than the year it is looking for.
+' Note: Values are in PERCENT
+' Note: Year is given as CALENDAR YEAR of the simulation.
+ 
+ 
+' Model File    Year  LongTerm   LongTerm  ShortTerm  Paper  Mulch      LongTerm     ShortTerm     Paper  Fossil  Displacement
+'                    Structure  Structure  Structure  Decay  Decay     Structure     Structure  Disposal    Leak        Factor
+'                     Fraction  DecayRate  DecayRate   Rate   Rate  DisposalRate  DisposalRate      Rate	  Rate
+
+    ML02  3     0000        75        1          10     30     10            1            10        30       3.0           1.1
+
+' Note: Year 0000 is required. These are default values used for years prior to first one specified.
+

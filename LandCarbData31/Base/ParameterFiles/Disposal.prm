@@ -1,0 +1,20 @@
+' Version: 3         
+' File: Disposal.prm
+' Synopsis: Provides annual values for (forest product) disposal parameters.
+' Note:  You must specify default values for parameters; do this by using the year 0000.
+'        Then specify specific values for any years you wish.
+'        You don't have to specify each year. During simulation, if LandCarb is looking
+'        for a year that is not listed, it will use the LATEST year listed
+'        that is LESS than the year it is looking for.
+' Note: All values are in PERCENT
+' Note: Year is given as CALENDAR YEAR of the simulation.
+ 
+
+' Model File    Year  LTStructure   STStructure      Paper      Dump  LandFill     Incin       Incin      Dump  LandFill
+'                         Recycle       Recycle    Recycle  Fraction  Fraction  Fraction   Bioenergy  LossRate  LossRate
+'                        Fraction      Fraction   Fraction                                  Fraction  Constant  Constant
+
+    ML02  3     0000           10            10         30        1       84        10           5        60        0.5
+
+' Note: Year 0000 is required. These are default values used for years prior to first one specified.
+

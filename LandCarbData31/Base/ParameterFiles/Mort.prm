@@ -1,0 +1,60 @@
+' Program: LandCarb
+' Version: 3
+' File: Mort.prm
+' Synopsis: Maintains mortality parameters for species.
+' Last Modified: Oct.30.08
+' Note: TimeClose for Shrubs is actually the TimeCloseWindow for upper and lower trees.
+' Notes from original notes, file SC2.3updatesModsAdds.doc:
+'					MortMax – Herb: MMH: Used to scale the extinction rate during the low mort window
+'					TimeClose – Herb: TCH: Maximum difference of TimeClose from cell to cell
+'					TimeClose – Shrub: TCS:  Maximum difference between TimeClose and TimeLowMort
+'					AgeMax – Herb: AMH: Scales TimeClose addition that based upon bole growth efficiency
+
+'                                  Coarse
+'                           Branch Root                Foliage  FineRoot 
+' Model File         Mort   Prune  Prune  Time    Age  Turnover Turnover
+' #     #    Species Max    Max    Max    Close   Max  Rate     Max 
+
+  ML02  5    Herb    1.000  0.000  0.000   200      7   1.000  0.500
+  ML02  5    Shrub   0.050  0.050  0.050    50      0   0.500  0.500
+  ML02  5    Abam    0.010  0.020  0.003   100    500   0.200  0.125
+  ML02  5    Abco    0.010  0.020  0.003   100    500   0.200  0.125
+  ML02  5    Abgr    0.010  0.020  0.003   100    500   0.200  0.125
+  ML02  5    Abla    0.010  0.020  0.003   100    200   0.200  0.125
+  ML02  5    Abpr    0.010  0.020  0.003   100    500   0.200  0.125
+  ML02  5    Abma    0.010  0.020  0.003   100    500   0.200  0.125
+  ML02  5    Acma    0.018  0.020  0.003   100    200   1.000  0.125
+  ML02  5    Alru    0.018  0.020  0.003    50    120   1.000  0.125
+  ML02  5    Arme    0.010  0.020  0.003    50    150   0.333  0.125
+  ML02  5    Cach    0.018  0.020  0.003    50    150   0.333  0.125
+  ML02  5    Cade    0.010  0.020  0.003   100    900   0.200  0.125
+  ML02  5    Lide    0.018  0.020  0.003    50    150   0.333  0.125
+  ML02  5    Pico    0.010  0.020  0.003   100    400   0.333  0.125
+  ML02  5    Pila    0.012  0.020  0.003   100    500   0.333  0.125
+  ML02  5    Pimo    0.012  0.020  0.003   100    500   0.333  0.125
+  ML02  5    Pipo    0.012  0.020  0.003   100    500   0.333  0.125
+  ML02  5    Pien    0.010  0.020  0.003   150    500   0.200  0.125
+  ML02  5    Pisi    0.010  0.020  0.003   100    500   0.250  0.125
+  ML02  5    Potr    0.018  0.020  0.003    75    150   1.000  0.125
+  ML02  5    Prem    0.020  0.020  0.003    25    100   1.000  0.125
+  ML02  5    Psme    0.015  0.020  0.003   150   1000   0.200  0.125
+  ML02  5    Quga    0.010  0.020  0.003   120    300   1.000  0.125
+  ML02  5    Sese    0.005  0.020  0.003   150   1500   0.200  0.125
+  ML02  5    Thpl    0.010  0.020  0.003   100   1000   0.200  0.125
+  ML02  5    Tshe    0.015  0.020  0.003   150    800   0.250  0.125
+  ML02  5    Tsme    0.010  0.020  0.003   100    600   0.200  0.125
+
+  ML02  5    AbgrC   0.010  0.020  0.003   100    500   0.200  0.125
+  ML02  5    Juoc    0.010  0.020  0.003   100   1000   0.100  0.125
+  ML02  5    Laoc    0.015  0.020  0.003   150   1000   1.000  0.125
+  ML02  5    Pial    0.012  0.020  0.003   100    200   0.333  0.125
+
+  ML02  5    Pipo1    0.012  0.020  0.003   100    500   0.333  0.125
+  ML02  5    Pipo2    0.012  0.020  0.003   100    500   0.333  0.125
+
+'  ML02  5    Psme    0.015  0.020  0.005   150    800   0.200  0.500
+'  ML02  5    Tshe    0.015  0.020  0.005   150    700   0.250  0.500
+
+' TimeClose for Psme and Tshe: 150 
+' Age max Psme: 800
+' Age max Tshe: 700

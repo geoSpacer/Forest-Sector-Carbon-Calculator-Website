@@ -1,0 +1,71 @@
+' Program: LandCarb
+' Version: 3
+' File: BurnDead.prm
+' Synopsis: Fire parameters for dead, stable and charcoal pools.
+' Note: Values represent percent remaining after fire.
+' Note: Previously stored in SitePrep.prm
+' Modified: dec.23.11
+
+' I set values to reflect those in 'SC gold 08-12-07/SitePrep.prm' for wildfire
+' I updated to include VeryLight and VeryHot severity classes.
+
+' Model File  Fire          Pool           ------------- Fire Severity -----------  FuelWeighting
+'             Type                         VeryLow    Low   Medium    High VeryHigh     Factor
+
+  ML02   9    Wildfire      DeadFoliage       75.0    62.5    50.0    25.0     0.0       1.00
+  ML02   9    Wildfire      DeadFineRoot     100.0    87.5    75.0    50.0    25.0       0.25
+  ML02   9    Wildfire      SnagSapWood      100.0    92.5    85.0    67.5    50.0       0.50
+  ML02   9    Wildfire      LogSapWood        95.0    85.0    75.0    42.5    10.0       2.00
+  ML02   9    Wildfire      SnagHeartWood    100.0    97.5    95.0    85.0    75.0       0.25
+  ML02   9    Wildfire      LogHeartWood     100.0    95.0    90.0    70.0    50.0       1.00
+  ML02   9    Wildfire      DeadBranch        75.0    62.5    50.0    25.5     1.0       2.00
+  ML02   9    Wildfire      DeadCRoot        100.0   100.0   100.0    75.0    50.0       0.00
+  ML02   9    Wildfire      StableSoil       100.0   100.0   100.0   100.0   100.0       0.00
+  ML02   9    Wildfire      StableFoliage    100.0    75.0    50.0    27.5     5.0       1.00
+  ML02   9    Wildfire      StableWood       100.0    75.0    50.0    27.5     5.0       1.00
+  ML02   9    Wildfire      Charcoal          10.0     7.5     5.0     2.5     0.0       1.00
+  ML02   9    Wildfire      SeverityLimits    50.0   125.0   200.0   300.0   400.0     600.0
+  ML02   9    Wildfire      MaxProb           1.00    1.00    0.00    0.00    0.00       0  
+  ML02   9    Wildfire      Herb              0.00    0.00    0.00    0.00    0.00       0.25
+  ML02   9    Wildfire      Shrub             0.00    0.00    0.00    0.00    0.00       0.50
+  ML02   9    Wildfire      LTree             0.00    0.00    0.00    0.00    0.00       2.00
+                                        
+  ML02   9    Prescribed    DeadFoliage       75.0    62.5    50.0    25.0     0.0       1.00
+  ML02   9    Prescribed    DeadFineRoot     100.0    87.5    75.0    50.0    25.0       0.25
+  ML02   9    Prescribed    SnagSapWood      100.0    92.5    85.0    67.5    50.0       0.50
+  ML02   9    Prescribed    LogSapWood        95.0    85.0    75.0    42.5    10.0       2.00
+  ML02   9    Prescribed    SnagHeartWood    100.0    97.5    95.0    85.0    75.0       0.25
+  ML02   9    Prescribed    LogHeartWood     100.0    95.0    90.0    70.0    50.0       1.00
+  ML02   9    Prescribed    DeadBranch        20.0    10.0     5.0     2.0     1.0       2.00
+  ML02   9    Prescribed    DeadCRoot        100.0   100.0   100.0    75.0    50.0       0.00
+  ML02   9    Prescribed    StableSoil       100.0   100.0   100.0   100.0   100.0       0.00
+  ML02   9    Prescribed    StableFoliage    100.0    75.0    50.0    27.5     5.0       1.00
+  ML02   9    Prescribed    StableWood       100.0    75.0    50.0    27.5     5.0       1.00
+  ML02   9    Prescribed    Charcoal          10.0     7.5     5.0     2.5     0.0       1.00
+  ML02   9    Prescribed    SeverityLimits    50.0   125.0   200.0   300.0   400.0     600.0
+  ML02   9    Prescribed    MaxProb           0.75    0.75    0.00    0.00    0.00       0  
+  ML02   9    Prescribed    Herb              0.00    0.00    0.00    0.00    0.00       0.25
+  ML02   9    Prescribed    Shrub             0.00    0.00    0.00    0.00    0.00       0.50
+  ML02   9    Prescribed    LTree             0.00    0.00    0.00    0.00    0.00       2.00
+
+  ML02   9    BurnPiles     DeadFoliage       99.0    95.0    90.0    85.0    80.0       1.00
+  ML02   9    BurnPiles     DeadFineRoot      99.0    95.0    90.0    85.0    80.0       0.25
+  ML02   9    BurnPiles     SnagSapWood      100.0    97.5    95.0    92.5    90.0       0.50
+  ML02   9    BurnPiles     LogSapWood       100.0    97.5    95.0    92.5    90.0       2.00
+  ML02   9    BurnPiles     SnagHeartWood    100.0   100.0   100.0    99.0    98.0       0.25
+  ML02   9    BurnPiles     LogHeartWood     100.0   100.0    97.5    95.0    92.5       1.00
+  ML02   9    BurnPiles     DeadBranch        20.0    10.0     5.0     2.0     1.0       2.00
+  ML02   9    BurnPiles     DeadCRoot        100.0   100.0   100.0   100.0   100.0       0.00
+  ML02   9    BurnPiles     StableSoil       100.0   100.0   100.0   100.0   100.0       0.00
+  ML02   9    BurnPiles     StableFoliage    100.0    95.0    90.0    85.5    80.0       1.00
+  ML02   9    BurnPiles     StableWood       100.0    95.0    90.0    85.0    80.0       1.00
+  ML02   9    BurnPiles     Charcoal          99.0    95.0    90.0    85.5    80.0       1.00
+  ML02   9    BurnPiles     SeverityLimits    50.0   125.0   200.0   300.0   400.0     600.0
+  ML02   9    BurnPiles     MaxProb           0.01     0.01   0.00    0.00    0.00       0  
+  ML02   9    BurnPiles     Herb              0.00    0.00    0.00    0.00    0.00       0.25
+  ML02   9    BurnPiles     Shrub             0.00    0.00    0.00    0.00    0.00       0.50
+  ML02   9    BurnPiles     LTree             0.00    0.00    0.00    0.00    0.00       2.00
+
+' For john day run, changed Prescribed, DeadBranch, Low to 10%
+' Note that I had to reduce the other severity values for DeadBranch too, as they
+' are expected to decrease with increasing severity.

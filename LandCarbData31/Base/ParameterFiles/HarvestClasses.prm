@@ -1,0 +1,22 @@
+' Program: LandCarb
+' Version: 3
+' File: HarvestClasses.prm
+' Synopsis: Defines the classes of harvest, as found in the harvest class grids.
+' Modified: Sep.11.09
+' Notes: 
+'   Layer is one of: UTree, LTree, Both
+'   Treatment is one of: Com, PCom, CCut, Salv
+'   Utilization is one of: Low, Medium, High
+'   FireSeverity, for prescribed fires, is one of None, Light, Medium, Hot
+'   Spelling and letter case for layer, treatment and utilization must be exact.
+'   The values used for Harvest Class must correspond to the values used in the harvest class grids
+'   DO NOT USE A HARVEST CLASS OF 0, as that is used to indicate no harvest, in harvest class grids
+
+' Model File Harvest Layer  Treatment  Utilization      Fire    Percent      Patch 
+'              Class                                Severity  Disturbed      Count 
+                                                                         
+   ML02  3        1    Both       Com         High      None        100          8 
+   ML02  3        2    LTree      Com         High      None         25          8 
+   ML02  3        3    Both       Com         High      None         25          8 
+   ML02  3        4    Both       Com         High      None        100          8 
+   ML02  3        5    Both       Com         High      None         25          8 

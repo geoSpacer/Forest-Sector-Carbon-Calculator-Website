@@ -1,0 +1,40 @@
+# Program: LandCarb
+# Version: 3
+# File: SeedSource.prm
+# Synopsis: Maintains relative local abundance information for tree species, by zones of species abundance.
+# Note: There must be one column for each of the zones specified by NumSeedSourceZones, which
+# is specified in Simul.dvr
+# Note: Does not include an entry for Herb or Shrub.
+# Note: Nat = natural regeneration, Art = artificial regeneration; do not change the
+# relative order of these two columns.
+# Note: LandCarb expects zones to be enumerated using sequential integers, 1 to n, where
+# n is the number of seed source zones.
+# Last Modified: Oct.30.07
+
+# Study site: This is for Washington State
+
+# Model File Species    Zone1____ 
+#   #     #             Nat   Art 
+                                                               
+  ML02    3  Abam      105     0  
+  ML02    3  Abco        0     0  
+  ML02    3  Abgr        0     0  
+  ML02    3  Abla       21     0  
+  ML02    3  Abpr        0     0  
+  ML02    3  Acma       47     0  
+  ML02    3  Alru      185     0  
+  ML02    3  Arme        0     0  
+  ML02    3  Cach        0     0  
+  ML02    3  Cade        0     0  
+  ML02    3  Pico        0     0  
+  ML02    3  Pila        0     0  
+  ML02    3  Pimo        0     0  
+  ML02    3  Pien        0     0  
+  ML02    3  Pipo        0     0  
+  ML02    3  Potr        0     0  
+  ML02    3  Prem        0     0  
+  ML02    3  Psme      602     0  
+  ML02    3  Quga        0     0  
+  ML02    3  Thpl       53     0  
+  ML02    3  Tshe      262     0  
+  ML02    3  Tsme       41     0  

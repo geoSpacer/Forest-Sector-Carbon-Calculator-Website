@@ -1,0 +1,7 @@
+# File: FireAgeBased.prm
+
+#  Model File   Calendar   Frequency       Fire         Fire    Percent    Patch
+#                   Year                   Type     Severity  Disturbed    Count
+
+
+ ML02      3        0000      100      Wildfire      VeryHigh      100      1

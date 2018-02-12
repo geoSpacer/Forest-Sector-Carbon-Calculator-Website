@@ -1,0 +1,28 @@
+' Program: LandCarb
+' Version: 3
+' File: HarvestZones.prm
+' Synopsis: Defines the zones of harvest, as found in the harvest zone grid.
+' Modified: Feb.19.10
+' Notes: 
+'   This file is used in conjunction with the harvest zone grid to control harvesting
+'   as carried out by the harvest simulator.
+'   Year is the calendar year at which these values take effect. Must include a year of 0000 (default)
+'   for each zone.
+'   Layer is one of: UTree, LTree, Both
+'   Treatment is one of: Com, PCom, CCut, Salv
+'   Utilization is one of: Low, Medium, High
+'   FireSeverity, for prescribed fires, is one of None, Light, Medium, Hot
+'   Spelling and letter case for layer, treatment and utilization must be exact.
+'   The values used for Harvest Zone must correspond to the values used in the harvest zone grid
+'   DO NOT USE A HARVEST ZONE OF 0, as that is used to indicate no harvesting, in the harvest zone grid
+'   Minimum harvest mass is in mg C/ha, for sum of live sapwood and heartwood
+
+' Model File Harvest   Calendar  Layer  Treatment  Utilization        Fire  Percent      Patch     Minimum    Maximum    Minimum  Rotation
+'              Zone        Year                                   Severity  Disturbed      Count       Block      Block    Harvest  Interval
+'                                                                                                    Area Ha    Area Ha       Mass
+                                                                             
+   ML02  3        1        0000   Both       Com         High       None       100          1          10        100       100         60
+   ML02  3        2        0000   Both       Com         Medium     None       100          1          10        100       100         65  
+   ML02  3        3        0000   Both       Com         Low        None       100          1          10        100       100         70  
+   ML02  3        4        0000   Both       Com         High       None       100          1          10        100       100        120  
+   ML02  3        5        0000   Both       Com         High       None       100          1          10        100       100         90

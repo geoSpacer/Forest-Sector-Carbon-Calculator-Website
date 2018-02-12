@@ -1,0 +1,45 @@
+# Program: LandCarb
+# Version: 3
+# File: SpeciesNames.prm
+# Synopsis: Defines the codes and names of tree species that are expected to
+#           be used during the simulation.
+# Note: Includes an entry for Herb and Shrub.
+# Last Modified: Oct.24.07
+# 
+# Model File  Code    SpeciesNum	     SpeciesName
+
+  ML02  3     Herb             0         "herb"
+  ML02  3     Shrub            1         "shrub"
+  ML02  3     Abam             2         "Abies amabilis"
+  ML02  3     Abco             3         "Abies concolor"
+  ML02  3     Abgr             4         "Abies grandis"
+  ML02  3     Abla             5         "Abies lasiocarpa"
+  ML02  3     Abpr             6         "Abies procera"
+  ML02  3     Abma             7         "Abies magnifica"
+  ML02  3     Acma             8         "Acer macrophyllum"
+  ML02  3     Alru             9         "Alnus rubra"
+  ML02  3     Arme            10         "Arbutus menziesii"
+  ML02  3     Cach            11         "Castanopsis chysophlla"
+  ML02  3     Cade            12         "Calocedrus decurrens"
+  ML02  3     Lide            13         "Lithocarpus densiflorus"
+  ML02  3     Pico            14         "Pinus contorta"
+  ML02  3     Pila            15         "Pinus lambertiana"
+  ML02  3     Pimo            16         "Pinus monticola"
+  ML02  3     Pipo            17         "Pinus ponderosa"
+  ML02  3     Pien            18         "Picea engelmannii"
+  ML02  3     Pisi            19         "Picea sitchensis"
+  ML02  3     Potr            20         "Populus tricocarpa"
+  ML02  3     Prem            21         "Prunus emarginata"
+  ML02  3     Psme            22         "Pseudotsuga menziesii"
+  ML02  3     Quga            23         "Quercus garryana"
+  ML02  3     Sese            24         "Sequoia sempervirens"
+  ML02  3     Thpl            25         "Thuja plicata"
+  ML02  3     Tshe            26         "Tsuga heterophylla"
+  ML02  3     Tsme            27         "Tsuga mertensiana"
+  ML02  3     AbgrC           28         "Abies X grandicolor"
+  ML02  3     Juoc            29         "Juniperus occidentalis"
+  ML02  3     Laoc            30         "Larix occidentalis"
+  ML02  3     Pial            31         "Pinus albicaulis"
+
+  ML02  3     Pipo1            17         "Pinus ponderosa 1"
+  ML02  3     Pipo2            17         "Pinus ponderosa 2"

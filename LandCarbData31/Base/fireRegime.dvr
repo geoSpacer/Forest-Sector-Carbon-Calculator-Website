@@ -1,0 +1,14 @@
+# Source: fire.noSuppression.r
+
+# Fires: 1310-2100 FRI=100 & 200 years
+
+
+#  Model File   Year  Location---       Fire        Fire    Percent    Patch
+#                     Row  Column       Type    Severity  Disturbed    Count
+
+ML02      3      1850      6      1      Wildfire      Hot      50      1
+ML02      3      1850      6      2      Wildfire      Hot      50      1
+ML02      3      1870      4      2      Wildfire      Medium   50      4
+ML02      3      1870      3      2      Wildfire      Hot      50      4
+ML02      3      2000      7      7      Wildfire      Light   100      8
+ML02      3      2000      9      1      Wildfire      Light   100      8

@@ -1,0 +1,21 @@
+' Version: 3         
+' File: ForestProducts.prm
+' Synopsis: Provides annual values for forest product manufacturing efficiency (ME) 
+'			and loss rate (LR).
+' Note:  You must specify default values for ME and LR; do this by using the year 0000.
+'        Then specify specific ME and LR values for any years you wish.
+'        You don't have to specify each year. During simulation, if LandCarb is looking
+'        for a year that is not listed, it will use the LATEST year listed
+'        that is LESS than the year it is looking for.
+' Note:  Year is given as calendar year of the simulation.
+ 
+
+' Model File    Year  Manufacturing  Loss
+'                        Efficiency  Rate
+
+    ML02  3     0000      0.4        0.01   ' Note: Required. These are default values used for years prior to first one specified.
+
+    ML02  3     1960      0.5        0.10
+    ML02  3     1970      0.8        0.50
+    
+

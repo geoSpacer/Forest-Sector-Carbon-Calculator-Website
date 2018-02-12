@@ -1,0 +1,49 @@
+' Program: LandCarb
+' Version: 3
+' File: CharcoalForm.prm
+' Synopsis: Parameters to indicate production of charcoal from dead pools
+' as a result of fire.
+' Note: Values represent percent dead mass converted to surface charcoal.
+
+' Model File  Fire          Pool          -------------- Fire Severity ------------
+'             Type                         VeryLow	   Low   Medium   High  VeryHigh
+
+  ML02   9    Wildfire      DeadFoliage       2.00    2.50    3.00    1.50    0.00
+  ML02   9    Wildfire      DeadFineRoot      1.00    1.50    2.00    1.00    0.00
+  ML02   9    Wildfire      SnagSapWood       1.00    1.35    1.70    2.10    2.50
+  ML02   9    Wildfire      LogSapWood        2.00    2.75    3.50    4.25    5.00
+  ML02   9    Wildfire      SnagHeartWood     0.00    0.00    0.00    0.60    1.20
+  ML02   9    Wildfire      LogHeartWood      0.00    0.20    0.40    0.95    1.50
+  ML02   9    Wildfire      DeadBranch        5.00    7.50   10.00    5.50    1.00
+  ML02   9    Wildfire      DeadCRoot         0.50    0.75    1.00    1.50    2.00
+  ML02   9    Wildfire      StableSoil        0.00    0.00    0.00    0.00    0.00
+  ML02   9    Wildfire      StableFoliage     2.00    2.50    3.00    2.00    1.00
+  ML02   9    Wildfire      StableWood        2.00    2.50    3.00    2.00    1.00
+                                                                                  
+  ML02   9    Prescribed    DeadFoliage       2.00    2.50    3.00    1.50    0.00
+  ML02   9    Prescribed    DeadFineRoot      1.00    1.50    2.00    1.00    0.00
+  ML02   9    Prescribed    SnagSapWood       1.00    1.35    1.70    2.10    2.50
+  ML02   9    Prescribed    LogSapWood        2.00    2.75    3.50    4.25    5.00
+  ML02   9    Prescribed    SnagHeartWood     0.00    0.00    0.00    0.60    1.20
+  ML02   9    Prescribed    LogHeartWood      0.00    0.20    0.40    0.95    1.50
+  ML02   9    Prescribed    DeadBranch        5.00    7.50    5.00    2.00    1.00
+  ML02   9    Prescribed    DeadCRoot         0.50    0.75    1.00    1.50    2.00
+  ML02   9    Prescribed    StableSoil        0.00    0.00    0.00    0.00    0.00
+  ML02   9    Prescribed    StableFoliage     2.00    2.50    3.00    2.00    1.00
+  ML02   9    Prescribed    StableWood        2.00    2.50    3.00    2.00    1.00
+                                                                                  
+  ML02   9    BurnPiles    DeadFoliage       2.00    2.50    3.00    1.50    0.00
+  ML02   9    BurnPiles    DeadFineRoot      1.00    1.50    2.00    1.00    0.00
+  ML02   9    BurnPiles    SnagSapWood       1.00    1.35    1.70    2.10    2.50
+  ML02   9    BurnPiles    LogSapWood        2.00    2.75    3.50    4.25    5.00
+  ML02   9    BurnPiles    SnagHeartWood     0.00    0.00    0.00    0.60    1.20
+  ML02   9    BurnPiles    LogHeartWood      0.00    0.20    0.40    0.95    1.50
+  ML02   9    BurnPiles    DeadBranch        5.00    7.50    5.00    2.00    1.00
+  ML02   9    BurnPiles    DeadCRoot         0.50    0.75    1.00    1.50    2.00
+  ML02   9    BurnPiles    StableSoil        0.00    0.00    0.00    0.00    0.00
+  ML02   9    BurnPiles    StableFoliage     2.00    2.50    3.00    2.00    1.00
+  ML02   9    BurnPiles    StableWood        2.00    2.50    3.00    2.00    1.00
+
+#   ML02   9    Prescribed    DeadBranch        5.00    7.50   10.00    5.50    1.00
+# Because of changes to BurnDead.prm for DeadBranch, I've had to change these values
+# so we don't get > 100% loss of dead and to-charcoal

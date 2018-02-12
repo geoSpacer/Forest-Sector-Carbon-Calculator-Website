@@ -1,0 +1,21 @@
+' Program: LandCarb
+' Version: 3
+' File: FireClasses.prm
+' Synopsis: Defines the classes of fire, as found in the fire class grids.
+' Modified: Aug.27.09
+' Notes: 
+'   Fire Type is one of: Wildfire, Prescribed
+'   Fire Severity is one of: Light, Medium, Hot
+'   Spelling and letter case for fire type and severity must be exact.
+'   The values used for Fire Class must correspond to the values used in the fire class grids
+'   DO NOT USE A FIRE CLASS OF 0, as that is used to indicate no fire, in fire class grids
+
+' Model File   Fire       Fire        Fire    Percent    Patch
+'             Class       Type    Severity  Disturbed    Count
+
+   ML02  3       1     Wildfire        Hot     100        8
+   ML02  3       2     Wildfire     Medium      25        8
+   ML02  3       3     Wildfire      Light      25        8
+   ML02  3       4   Prescribed      Light      25        8
+   ML02  3       5   Prescribed     Medium      25        8
+   ML02  3       6   Prescribed        Hot      25        8

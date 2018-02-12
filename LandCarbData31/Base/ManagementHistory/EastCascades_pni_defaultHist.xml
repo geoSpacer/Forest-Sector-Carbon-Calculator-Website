@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<!--Forest Sector Carbon Calculator-->
+<!--http://landcarb.forestry.oregonstate.edu-->
+<RunParameters>
+  <RunDateTime>10/23/2012 12:44:38 PM</RunDateTime>
+  <RunScale>landscape</RunScale>
+  <SiteRegion>EastCascades</SiteRegion>
+  <SiteOwner>pni</SiteOwner>
+  <ManagementRegime>
+    <TreatmentClass>PrimaryRegime</TreatmentClass>
+    <Type>CCut_SO</Type>
+    <StartYear>1900</StartYear>
+    <EndYear>1919</EndYear>
+    <Interval-Offset>250</Interval-Offset>
+    <Disturbed-Size>25</Disturbed-Size>
+    <Util-Severity-Supp>Low</Util-Severity-Supp>
+  </ManagementRegime>
+  <ManagementRegime>
+    <TreatmentClass>PrimaryRegime</TreatmentClass>
+    <Type>CCut_SO</Type>
+    <StartYear>1920</StartYear>
+    <EndYear>1949</EndYear>
+    <Interval-Offset>100</Interval-Offset>
+    <Disturbed-Size>35</Disturbed-Size>
+    <Util-Severity-Supp>Low</Util-Severity-Supp>
+  </ManagementRegime>
+  <ManagementRegime>
+    <TreatmentClass>PrimaryRegime</TreatmentClass>
+    <Type>CCut_SO</Type>
+    <StartYear>1950</StartYear>
+    <EndYear>1989</EndYear>
+    <Interval-Offset>100</Interval-Offset>
+    <Disturbed-Size>35</Disturbed-Size>
+    <Util-Severity-Supp>Medium</Util-Severity-Supp>
+  </ManagementRegime>
+  <ManagementRegime>
+    <TreatmentClass>PrimaryRegime</TreatmentClass>
+    <Type>CCut_SO</Type>
+    <StartYear>1990</StartYear>
+    <EndYear>2011</EndYear>
+    <Interval-Offset>100</Interval-Offset>
+    <Disturbed-Size>35</Disturbed-Size>
+    <Util-Severity-Supp>High</Util-Severity-Supp>
+  </ManagementRegime>
+  <NaturalDisturbanceRegime>
+    <TreatmentClass>PrimaryRegime</TreatmentClass>
+    <Type>WildfireDefault</Type>
+    <StartYear>1412</StartYear>
+    <EndYear>1939</EndYear>
+    <Interval-Offset>null</Interval-Offset>
+    <Disturbed-Size>null</Disturbed-Size>
+    <Util-Severity-Supp>noSupp</Util-Severity-Supp>
+  </NaturalDisturbanceRegime>
+  <NaturalDisturbanceRegime>
+    <TreatmentClass>PrimaryRegime</TreatmentClass>
+    <Type>WildfireDefault</Type>
+    <StartYear>1940</StartYear>
+    <EndYear>2011</EndYear>
+    <Interval-Offset>null</Interval-Offset>
+    <Disturbed-Size>null</Disturbed-Size>
+    <Util-Severity-Supp>typical</Util-Severity-Supp>
+  </NaturalDisturbanceRegime>
+</RunParameters>

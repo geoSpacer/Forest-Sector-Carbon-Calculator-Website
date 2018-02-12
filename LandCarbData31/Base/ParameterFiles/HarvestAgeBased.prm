@@ -1,0 +1,6 @@
+# File: HarvestAgeBased.prm
+
+#  Model File   Calendar   Frequency   Layer  Treatment  Utilization   SiteFire_________    Percent      Patch
+#                   Year                                               Type     Severity  Disturbed      Count
+
+ ML02      3        0000      100       Both      CCut     VeryHigh    None      None        100         1 

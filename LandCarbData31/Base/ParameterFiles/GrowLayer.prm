@@ -1,0 +1,14 @@
+' Program: LandCarb
+' Version: 3
+' File: GrowLayer.prm
+' Synopsis: Growth parameters for the plant layers.
+' Note: Currently, the program ignores the Tshe and Psme rows.
+' Modified: 04.15.13
+'                                                                                                         Initial  Canopy  Bole	  Foliage                                  
+' Model  File  Layer  Foliage_____  FineRoot____  Sapwood_____  Branch______  CRoot_______  HeartRot____  Foliage  Inter   Growth	Water     LayerTemp   Layer    
+'                     Q10   Resp10  Q10   Resp10  Q10   Resp10  Q10   Resp10  Q10   Resp10  Q10   Resp10  Mass     Min     Effic	Use       Acclimate   TempShape
+                                                                                                                                                                 
+  ML02   4     Herb   2.000 0.500   2.000 0.500   2.000 0.000   2.000 0.000   2.000 0.000   2.000 0.000   0.01     0.006   0.000    6.0        40           3    
+  ML02   4     Shrub  2.000 0.500   2.000 0.500   2.000 0.050   2.000 0.050   2.000 0.050   2.000 0.000   0.01     0.006   0.632    4.0        40           3    
+  ML02   4     LTree  2.000 0.250   2.000 0.500   2.000 0.02    2.000 0.02    2.000 0.02    2.000 0.010   0.01     0.006   1.264    1.0        40           3    
+  ML02   4     UTree  2.000 0.250   2.000 0.500   2.000 0.02    2.000 0.02    2.000 0.02    2.000 0.010   0.01     0.006   1.264    1.0        40           3    

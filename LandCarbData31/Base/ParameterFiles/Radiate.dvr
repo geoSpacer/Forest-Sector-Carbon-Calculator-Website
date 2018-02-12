@@ -1,0 +1,23 @@
+' Program: LandCarb
+' Version: 3
+' File: Radiate.dvr
+' Synopsis: Maintains information about the radiation in each of the climate zones.
+' Last Modified: Jan.23.08
+
+' Model File Zone Month DifSolRad DirSolarRad SolRad  Sunrise-  AltAngle-
+'                                                     Azimuth-   South
+'                                                      Angle
+
+  ML02  15    1    Jan    192.55    298.49    491.05   90.01     69.08
+  ML02  15    1    Feb    181.41    366.70    548.12   90.01     77.04
+  ML02  15    1    Mar    162.31    434.81    597.12   90.01     87.58
+  ML02  15    1    Apr    151.13    441.18    592.31   90.01     80.58
+  ML02  15    1    May    164.67    351.97    516.65   90.01     71.21
+  ML02  15    1    Jun    159.07    337.77    496.84   90.01     66.91
+  ML02  15    1    Jul    104.66    525.82    630.48   90.01     68.82
+  ML02  15    1    Aug    110.60    555.69    666.29   90.01     76.54
+  ML02  15    1    Sep    155.35    439.21    594.56   90.01     87.78
+  ML02  15    1    Oct    142.85    479.13    621.98   90.01     80.40
+  ML02  15    1    Nov    193.28    299.93    493.21   90.01     71.09
+  ML02  15    1    Dec    198.45    261.32    459.78   90.01     66.95
+

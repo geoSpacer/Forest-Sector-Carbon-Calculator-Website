@@ -1,0 +1,56 @@
+' Version: 3         
+' File: Harvest.prm   
+' Synopsis: Harvest parameters
+' Notes: 
+'       Treament is one of PCom, Com, CCut_SO (stem only), CCut_AG (aboveground) CCut_WT (whole tree) or Salv
+'       utilization is one of Low, Medium, High
+'   Spelling and letter case for treatment and utilization must be exact
+' Note: For Salv, %Cut does not apply and is zero-filled.
+' 
+' Modified: Sept.04.08
+' Modified: 17 May 2010 - kao
+
+' Model File   Treatment  utilization   %Cut   %BoleTaken    %BranchTaken   %RootTaken
+
+   ML02    8   PCom       None             5        0         0             0
+   ML02    8   PCom       VeryLow          5        0          0             0
+   ML02    8   PCom       Low             10        0          0             0
+   ML02    8   PCom       Medium          10        0          0             0
+   ML02    8   PCom       High            20        0          0             0
+   ML02    8   PCom       VeryHigh        20       50         50             0
+   ML02    8   Com        None             5        0         0             0
+   ML02    8   Com        VeryLow          5       50          0             0
+   ML02    8   Com        Low              5       50         50             0
+   ML02    8   Com        Medium          50       90          0             0
+   ML02    8   Com        High            50       90         45             0
+   ML02    8   Com        VeryHigh       100       90         90             0
+   ML02    8   CCut       None           100        0         0             0
+   ML02    8   CCut       VeryLow        100       85         0             0
+   ML02    8   CCut       Low            100       85         0             0
+   ML02    8   CCut       Medium         100       90         0             0
+   ML02    8   CCut       High           100       95         0             0
+   ML02    8   CCut       VeryHigh       100       95         0             0
+   ML02    8   CCut_SO    None           100       0          0             0
+   ML02    8   CCut_SO    VeryLow        100       80          0             0
+   ML02    8   CCut_SO    Low            100       85          0             0
+   ML02    8   CCut_SO    Medium         100       90          0             0
+   ML02    8   CCut_SO    High           100       95          0             0
+   ML02    8   CCut_SO    VeryHigh       100       97          0             0
+   ML02    8   CCut_AG    None           100        0         0             0
+   ML02    8   CCut_AG    VeryLow        100       80         80             0
+   ML02    8   CCut_AG    Low            100       85         85             0
+   ML02    8   CCut_AG    Medium         100       90         90             0
+   ML02    8   CCut_AG    High           100       95         95             0
+   ML02    8   CCut_AG    VeryHigh       100       97         97             0 
+   ML02    8   CCut_WT    None           100        0         0             0
+   ML02    8   CCut_WT    VeryLow        100       80         80            80
+   ML02    8   CCut_WT    Low            100       85         85            85
+   ML02    8   CCut_WT    Medium         100       90         90            90
+   ML02    8   CCut_WT    High           100       95         95            95
+   ML02    8   CCut_WT    VeryHigh       100       97         97            97
+   ML02    8   Salv       None             0        0         0             0
+   ML02    8   Salv       VeryLow          0       50          0             0
+   ML02    8   Salv       Low              0       50          0             0
+   ML02    8   Salv       Medium           0       75          0             0
+   ML02    8   Salv       High             0      100          0             0
+   ML02    8   Salv       VeryHigh         0      100          0             0

@@ -1,0 +1,76 @@
+' Program: LandCarb  
+' Version: 3         
+' File: BurnKill.prm
+' Synopsis: Burn and kill parameters for fires.
+' Note: Values represent percent burned/killed. Burned is lost to atmosphere.
+' Modified: dec.23.11
+
+' I set values to reflect those in 'SC gold 08-12-07/BurnKill.prm' for wildfire
+' I've set values to include VeryLow and VeryHigh
+
+' Model File  Fire         Fire       Layer   %Killed____  %Burned____   %Charcoal___
+'             Type         Severity           Above Below  Above Below     Above  Below
+
+  ML02    8     Wildfire     VeryLow   Herb   80.00  80.00  99.50   0.00   0.50   0.50
+  ML02    8     Wildfire     VeryLow   Shrub  50.00  50.00  50.00   0.00   0.50   0.50
+  ML02    8     Wildfire     VeryLow   LTree  25.00  25.00   5.00   0.00   1.00   0.50
+  ML02    8     Wildfire     VeryLow   UTree   5.00   5.00   1.00   0.00   2.00   0.50
+  ML02    8     Wildfire     Low       Herb   85.00  85.00  99.25  12.50   0.75   1.00
+  ML02    8     Wildfire     Low       Shrub  62.50  62.50  62.50   2.50   0.75   0.75
+  ML02    8     Wildfire     Low       LTree  57.50  57.50   6.00   1.00   1.25   0.60
+  ML02    8     Wildfire     Low       UTree  27.50  27.50   1.50   0.50   1.50   0.60
+  ML02    8     Wildfire     Medium    Herb   90.00  90.00  99.00  25.00   1.00   1.50
+  ML02    8     Wildfire     Medium    Shrub  75.00  75.00  75.00   5.00   1.00   1.00
+  ML02    8     Wildfire     Medium    LTree  90.00  90.00   7.00   2.00   1.50   0.70
+  ML02    8     Wildfire     Medium    UTree  50.00  50.00   2.00   1.00   1.00   0.70
+  ML02    8     Wildfire     High      Herb   95.00  95.00  99.25  37.50   0.75   1.25
+  ML02    8     Wildfire     High      Shrub  87.50  87.50  87.00   7.50   1.00   1.00
+  ML02    8     Wildfire     High      LTree  95.00  95.00   8.50   3.50   1.75   0.85
+  ML02    8     Wildfire     High      UTree  75.00  75.00   3.50   1.50   2.50   0.85
+  ML02    8     Wildfire     VeryHigh  Herb  100.00 100.00  99.50  50.00   0.50   1.00
+  ML02    8     Wildfire     VeryHigh  Shrub 100.00 100.00  99.00  10.00   1.00   1.00
+  ML02    8     Wildfire     VeryHigh  LTree 100.00 100.00  10.00   5.00   2.00   1.00
+  ML02    8     Wildfire     VeryHigh  UTree 100.00 100.00   5.00   2.00   4.00   1.00
+
+  ML02    8     Prescribed   VeryLow   Herb   80.00  80.00  99.50   0.00   0.50   0.50
+  ML02    8     Prescribed   VeryLow   Shrub  50.00  50.00  50.00   0.00   0.50   0.50
+  ML02    8     Prescribed   VeryLow   LTree  10.00  10.00   5.00   0.00   1.00   0.50
+  ML02    8     Prescribed   VeryLow   UTree   1.00   1.00   0.00   0.00   2.00   0.50
+  ML02    8     Prescribed   Low       Herb   85.00  85.00  99.25  12.50   0.75   1.00
+  ML02    8     Prescribed   Low       Shrub  62.50  62.50  62.50   2.50   0.75   0.75
+  ML02    8     Prescribed   Low       LTree  30.00  30.00   6.00   1.00   1.25   0.60
+  ML02    8     Prescribed   Low       UTree   5.50   5.50   1.00   0.50   1.50   0.60
+  ML02    8     Prescribed   Medium    Herb   90.00  90.00  99.00  25.00   1.00   1.50
+  ML02    8     Prescribed   Medium    Shrub  75.00  75.00  75.00   5.00   1.00   1.00
+  ML02    8     Prescribed   Medium    LTree  50.00  50.00   7.00   2.00   1.50   0.70
+  ML02    8     Prescribed   Medium    UTree  10.00  10.00   2.00   1.00   1.00   0.70
+  ML02    8     Prescribed   High      Herb   95.00  95.00  99.00  37.50   0.75   1.25
+  ML02    8     Prescribed   High      Shrub  87.50  87.50  87.00   7.50   1.00   1.00
+  ML02    8     Prescribed   High      LTree  75.00  75.00   8.50   3.50   1.75   0.85
+  ML02    8     Prescribed   High      UTree  55.00  55.00   3.50   1.50   2.50   0.85
+  ML02    8     Prescribed   VeryHigh  Herb  100.00 100.00  99.00  50.00   0.50   1.00
+  ML02    8     Prescribed   VeryHigh  Shrub 100.00 100.00  99.00  10.00   1.00   1.00
+  ML02    8     Prescribed   VeryHigh  LTree 100.00 100.00  10.00   5.00   2.00   1.00
+  ML02    8     Prescribed   VeryHigh  UTree 100.00 100.00   5.00   2.00   4.00   1.00
+
+  ML02    8     BurnPiles    VeryLow   Herb    1.00   1.00 100.00   0.00   0.00   0.00
+  ML02    8     BurnPiles    VeryLow   Shrub   1.00   1.00  50.00   0.00   0.50   0.50
+  ML02    8     BurnPiles    VeryLow   LTree   0.00   0.00   0.00   0.00   0.00   0.00
+  ML02    8     BurnPiles    VeryLow   UTree   0.00   0.00   0.00   0.00   0.00   0.00
+  ML02    8     BurnPiles    Low       Herb    5.00   5.00 100.00   0.00   0.00   0.00
+  ML02    8     BurnPiles    Low       Shrub   5.00   5.00  62.50   0.00   0.75   0.00
+  ML02    8     BurnPiles    Low       LTree   2.50   2.50   1.00   1.00   1.25   0.60
+  ML02    8     BurnPiles    Low       UTree   0.00   0.00   0.00   0.00   0.00   0.00
+  ML02    8     BurnPiles    Medium    Herb   10.00  10.00 100.00   0.00   0.00   0.50
+  ML02    8     BurnPiles    Medium    Shrub  10.00  10.00  75.00   5.00   1.00   1.00
+  ML02    8     BurnPiles    Medium    LTree   5.00   5.00   7.00   2.00   1.50   0.70
+  ML02    8     BurnPiles    Medium    UTree   0.00   0.00   0.00   0.00   0.00   0.00
+  ML02    8     BurnPiles    High      Herb   15.00  15.00 100.00   0.00   0.00   0.00
+  ML02    8     BurnPiles    High      Shrub  15.00  15.00  87.00   7.50   1.00   1.00
+  ML02    8     BurnPiles    High      LTree   7.50   7.50   8.50   3.50   1.75   0.85
+  ML02    8     BurnPiles    High      UTree   1.00   1.00   3.50   1.50   2.50   0.85
+  ML02    8     BurnPiles    VeryHigh  Herb   20.00  20.00  100.00  0.00   0.00   0.00
+  ML02    8     BurnPiles    VeryHigh  Shrub  20.00  20.00  99.00  10.00   1.00   1.00
+  ML02    8     BurnPiles    VeryHigh  LTree  10.00  10.00  10.00   5.00   2.00   1.00
+  ML02    8     BurnPiles    VeryHigh  UTree   2.00   2.00   5.00   2.00   4.00   1.00
+

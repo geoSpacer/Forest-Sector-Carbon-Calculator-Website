@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Home>
+  <Menu text="Combined Graphs">
+    <subMenu text="Total Forest Sector" selectable="False" value="sub0">
+      <subMenu text="Stores" selectable="True" value="comb 1" />
+      <subMenu text="Balance" selectable="True" value="comb 11" />
+    </subMenu>
+    <subMenu text="Total Forest Ecosystem" selectable="False" value="sub1">
+      <subMenu text="Stores" selectable="True" value="comb 3" />
+      <subMenu text="Balance" selectable="True" value="comb 12" />
+      <subMenu text="Flows" selectable="True" value="comb 10" />
+    </subMenu>
+    <subMenu text="Total Forest Products" selectable="False" value="sub2">
+      <subMenu text="Stores" selectable="True" value="comb 2" />
+      <subMenu text="Balance" selectable="True" value="comb 13" />
+    </subMenu>
+      <subMenu text="Total Forest Substitution" selectable="False" value="sub3">
+          <subMenu text="Stores" selectable="True" value="comb 4" />
+          <subMenu text="Balance" selectable="True" value="comb 14" />
+      </subMenu>
+  </Menu>
+  <Menu text="Individual Graphs">
+    <subMenu text="Forest Sector" selectable="False" value="sub10">
+      <subMenu text="Stores" selectable="True" value="ind TotalForestSectorMass.csv" />
+      <subMenu text="Balance" selectable="True" value="ind TotalForestSectorBalance.csv" />
+    </subMenu>
+    <subMenu text="Forest Ecosystem" selectable="False" value="sub11">
+      <subMenu text="Stores" selectable="False" value="sub11-1">
+        <subMenu text="Total Ecosystem Stores" selectable="True" value="ind TotalForestEcosystemMass.csv" />
+        <subMenu text="Live Stores" selectable="True" value="ind LiveMass.csv" />
+        <subMenu text="Dead Stores" selectable="True" value="ind DeadMass.csv" />
+        <subMenu text="Stable (Soil) Stores" selectable="True" value="ind StableMass.csv" />
+      </subMenu>
+      <subMenu text="Balance" selectable="False" value="sub11-2">
+        <subMenu text="Total Ecosystem Balance" selectable="True" value="ind TotalForestEcosystemBalance.csv" />
+        <subMenu text="Live Balance" selectable="True" value="ind LiveBalance.csv" />
+        <subMenu text="Dead Balance" selectable="True" value="ind DeadBalance.csv" />
+        <subMenu text="Stable (Soil) Balance" selectable="True" value="ind StableBalance.csv" />
+      </subMenu>
+      <subMenu text="Flows" selectable ="False" value="sub11-3">
+        <subMenu text="Net Ecosystem Production" selectable="True" value="ind ForestNep.csv" />
+        <subMenu text="Net Primary Production" selectable="True" value="ind ForestNpp.csv" />
+        <subMenu text="Heterotrophic Respiration" selectable="True" value="ind ForestRh.csv" />
+      </subMenu>
+    </subMenu>
+    <subMenu text="Forest Products" selectable="False" value="sub12">
+      <subMenu text="Stores" selectable="False" value="sub12-1">
+        <subMenu text="Total Product Stores" selectable="True" value="ind TotalForestProductMass.csv" />
+        <subMenu text="Products In Use Stores" selectable="True" value="ind ProductsInUseMass.csv" />
+        <subMenu text="Disposal Stores" selectable="True" value="ind DisposalMass.csv" />
+      </subMenu>
+      <subMenu text="Balance" selectable="False" value="sub12-2">
+        <subMenu text="Total Product Balance" selectable="True" value="ind TotalForestProductBalance.csv" />
+        <subMenu text="Products In Use Balance" selectable="True" value="ind ProductsInUseBalance.csv" />
+        <subMenu text="Disposal Balance" selectable="True" value="ind DisposalBalance.csv" />
+      </subMenu>
+      <subMenu text="Flows" selectable="False" value="sub12-3">
+        <subMenu text="Harvest Removal" selectable="True" value="ind HarvestMass.csv" />
+        <subMenu text="Manufacturing Output" selectable="True" value="ind ManufacturingFlux.csv" />
+      </subMenu>
+    </subMenu>
+    <subMenu text="Substitution" selectable="False" value="sub13">
+      <subMenu text="Stores" selectable="False" value="sub13-1">
+        <subMenu text="Product Substitution" selectable="True" value="ind ProductSubstitutionMass.csv" />
+        <subMenu text="Biofuel Offset" selectable="True" value="ind BiofuelMass.csv" />
+      </subMenu>
+      <subMenu text="Balance" selectable="False" value="sub13-2">
+        <subMenu text="Product Substitution" selectable="True" value="ind ProductSubstitutionBalance.csv" />
+        <subMenu text="Biofuel Production" selectable="True" value="ind BiofuelBalance.csv" />
+      </subMenu>
+    </subMenu>
+    <subMenu text="Events" selectable="False" value="sub14">
+      <subMenu text="Wildfire Occurrence" selectable="True" value="event WildFireEventAreas.csv" />
+      <subMenu text="Prescribed Broadcast Burn Occurrence" selectable="True" value="event PrescribedFireEventAreas.csv" />
+      <subMenu text="Prescribed Burn Piles Occurrence" selectable="True" value="event BurnPileFireEventAreas.csv" />
+      <subMenu text="Harvest Occurrence" selectable="True" value="event HarvestEventAreas.csv" />
+      <subMenu text="Harvest Target Achieved" selectable="True" value="event HarvestYearArea.txt" />
+      <subMenu text="Salvage Occurrence" selectable="True" value="event SalvageEventAreas.csv" />
+      <subMenu text="Insect Occurrence" selectable="True" value="event InsectEventAreas.csv" />
+    </subMenu>
+  </Menu>
+  <Menu text="Output Files">
+    <subMenu text="Download Output" selectable="true" value="out download"></subMenu>
+    <subMenu text="Forest Sector" selectable="False" value="sub20">
+      <subMenu text="Forest Sector Stores" selectable="True" value="out TotalForestSectorMass.csv" />
+      <subMenu text="Forest Sector Balance" selectable="True" value="out TotalForestSectorBalance.csv" />
+    </subMenu>
+    <subMenu text="Forest Ecosystem" selectable="False" value="sub21">
+      <subMenu text="Ecosystem Stores" selectable="False" value="sub21-1">
+        <subMenu text="Total Ecosystem Stores" selectable="True" value="out TotalForestEcosystemMass.csv" />
+        <subMenu text="Live Stores" selectable="True" value="out LiveMass.csv" />
+        <subMenu text="Dead Stores" selectable="True" value="out DeadMass.csv" />
+        <subMenu text="Stable (Soil) Stores" selectable="True" value="out StableMass.csv" />
+      </subMenu>
+      <subMenu text="Ecosystem Balance" selectable="False" value="sub21-2">
+        <subMenu text="Total Ecosystem Balance" selectable="True" value="out TotalForestEcosystemBalance.csv" />
+        <subMenu text="Live Balance" selectable="True" value="out LiveBalance.csv" />
+        <subMenu text="Dead Balance" selectable="True" value="out DeadBalance.csv" />
+        <subMenu text="Stable (Soil) Balance" selectable="True" value="out StableBalance.csv" />
+      </subMenu>
+      <subMenu text="Ecosystem Flows" selectable ="False" value="sub21-3">
+        <subMenu text="Net Ecosystem Production" selectable="True" value="out ForestNep.csv" />
+        <subMenu text="Net Primary Production" selectable="True" value="out ForestNpp.csv" />
+        <subMenu text="Heterotrophic Respiration" selectable="True" value="out ForestRh.csv" />
+      </subMenu>
+    </subMenu>
+    <subMenu text="Forest Products" selectable="False" value="sub22">
+      <subMenu text="Product Stores" selectable="False" value="sub22-1">
+        <subMenu text="Total Product Stores" selectable="True" value="out TotalForestProductMass.csv" />
+        <subMenu text="Products In Use Stores" selectable="True" value="out ProductsInUseMass.csv" />
+        <subMenu text="Disposal Stores" selectable="True" value="out DisposalMass.csv" />
+      </subMenu>
+      <subMenu text="Product Balance" selectable="False" value="sub22-2">
+        <subMenu text="Total Product Balance" selectable="True" value="out TotalForestProductBalance.csv" />
+        <subMenu text="Products In Use Balance" selectable="True" value="out ProductsInUseBalance.csv" />
+        <subMenu text="Disposal Balance" selectable="True" value="out DisposalBalance.csv" />
+      </subMenu>
+      <subMenu text="Product Flows" selectable="False" value="sub22-3">
+        <subMenu text="Harvest Removal" selectable="True" value="out HarvestMass.csv" />
+        <subMenu text="Manufacturing Output" selectable="True" value="out ManufacturingFlux.csv" />
+      </subMenu>
+    </subMenu>
+    <subMenu text="Biofuel" selectable="False" value="sub23">
+      <subMenu text="Biofuel Offset" selectable="True" value="out BiofuelMass.csv" />
+      <subMenu text="Biofuel Production" selectable="True" value="out BiofuelBalance.csv" />
+    </subMenu>
+    <subMenu text="Events" selectable="False" value="sub24">
+      <subMenu text="Wildfire Occurrence" selectable="True" value="outEvent WildFireEventAreas.csv" />
+      <subMenu text="Prescribed Broadcast Burn Occurrence" selectable="True" value="outEvent PrescribedFireEventAreas.csv" />
+      <subMenu text="Prescribed Burn Piles Occurrence" selectable="True" value="outEvent BurnPileFireEventAreas.csv" />
+      <subMenu text="Harvest Occurrence" selectable="True" value="outEvent HarvestEventAreas.csv" />
+      <subMenu text="Harvest Target Achieved" selectable="True" value="outEvent HarvestYearArea.txt" />
+      <subMenu text="Salvage Occurrence" selectable="True" value="outEvent SalvageEventAreas.csv" />
+      <subMenu text="Insect Occurrence" selectable="True" value="outEvent InsectEventAreas.csv" />
+    </subMenu>
+    <subMenu text="Log Files" selectable="False" value="sub25">
+      <subMenu text="Run Output" selectable="True" value="log outWindow" />
+      <subMenu text="Age Class Distribution" selectable="True" value="log AgeClassDistribution.csv" />
+      <subMenu text="Species Tally" selectable="True" value="log SpeciesTally.dgn" />
+      <subMenu text="Year Tracker" selectable="True" value="log YearTracker.dgn" />
+      <subMenu text="Version" selectable="True" value="log Version.dgn" />
+	</subMenu>
+  </Menu>
+  <Menu text="Input Variables">
+    <subMenu text="Simulation Parameters" selectable="True" value="param listInputParameters">
+    </subMenu>
+    <subMenu text="Fire Regime Parameters" selectable="False" value="sub30">
+      <subMenu text="Fire Return Interval" selectable="True" value="param fireReturnIntervalFrequency.csv" />
+      <subMenu text="Fire Severity" selectable="True" value="param fireSeverityFrequency.csv" />
+    </subMenu>
+    <subMenu text="Driver Files" selectable="False" value="sub31">
+      <subMenu text="Simul" selectable="True" value="param Simul.dvr" />
+      <!--<subMenu text="Climate" selectable="True" value="param Climate.dvr" />-->
+      <subMenu text="Fire Regime" selectable="True" value="param FireRegime.dvr" />
+      <subMenu text="Harvest Regime" selectable="True" value="param Harvint.dvr" />
+      <subMenu text="Radiate" selectable="True" value="param Radiate.dvr" />
+    </subMenu>
+    <subMenu text="Parameter Files" selectable="False" value="sub32">
+      <subMenu text="Burn Dead" selectable="True" value="param BurnDead.prm" />
+      <subMenu text="Burn Kill" selectable="True" value="param BurnKill.prm" />
+      <subMenu text="Climate" selectable="False" value="sub33">
+        <subMenu text="Decay Index" selectable="True" value="param AnnualAbioticDecayIndex.prm" />
+        <subMenu text="Production Index" selectable="True" value="param AnnualProductionIndex.prm" />
+      </subMenu>
+      <subMenu text="Disposal" selectable="True" value="param Disposal.prm" />
+      <subMenu text="Manufacturing" selectable="True" value="param Manufacturing.prm" />
+      <subMenu text="Products Use" selectable="True" value="param ProductsUse.prm" />
+    </subMenu>
+  </Menu>
+</Home>
+

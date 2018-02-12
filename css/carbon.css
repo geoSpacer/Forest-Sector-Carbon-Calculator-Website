@@ -1,0 +1,229 @@
+/** {
+    margin: 0px;
+    padding: 0px;
+    font-family: Veranda, arial, sans-serif;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    min-height: 100%; 
+    margin-bottom: 1px;
+}*/
+
+body {
+    background-image: url('../images/background.png');
+    background-repeat: repeat;
+    text-align: center;
+    font-size: medium;
+    line-height: 1.4em;
+}
+
+#mainPageDiv {
+    font-family: Veranda, arial, sans-serif;
+	background-color:#D7D6AE;
+    text-align: left;
+	width:920px;
+/*	border: 2px;
+	border-style:solid;
+	border-color:#BBB;
+	padding:0px; */
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/*#background {
+    width: 920px;
+    margin: 0 auto;
+    background-color: #D7D6AE;
+    background-repeat: repeat-y;
+    text-align: left;
+}*/
+
+a {	text-decoration:none; 
+   	color:Blue;
+}
+a:hover { text-decoration:underline;
+          color:Blue;
+}
+a:visited { color:Blue; }
+
+#main 
+{
+	margin-top: 30px;
+	margin-top: 50px !ie; /* hack for IE */
+	margin-bottom: 10px;
+	margin-bottom: 30px !ie; /* hack for IE */
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+#main h3 {
+    border-bottom: 1px dotted #888;
+    font-size: 120%;
+    color: #891218; 
+    margin-top: 20px;
+  /*  margin-right: 5px;*/
+    margin-bottom: 5px;
+}
+
+#mainPageTitle 
+{
+	font-size:x-large;
+	font-weight:bold;
+	margin-bottom: 15px;
+}
+
+#mainPageTitle span {
+	float:right;
+	font-size:medium;
+	font-weight:normal;
+	margin-right:20px;
+}
+
+#whatsNew {
+    float:right;
+    font-size:large;
+    font-weight:bold;
+    margin-right:20px;
+}
+
+#whatsNew a {
+    color:Red;
+}
+
+#whatsNew a:visited {
+    color:Red;
+}
+
+.SSControls 
+{
+    margin-left:345px;
+    margin-right:auto !ie; /* hack for IE8 */
+}
+
+.SSControlsFirst 
+{
+    float: left;
+    margin-top: 12px;
+    margin-left: -8px !ie; /* hack for IE8 */
+}
+
+#inputForm {
+    margin-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.TabArea {
+	border: dotted 2px #888;
+}
+
+.titleText {
+    border-bottom: 1px dotted #888;
+    font-size:1.3em;
+    margin-bottom: 5px;
+    margin-top: 100px;
+    margin-right: 5px;
+}
+
+.imageBottomMargin 
+{
+    margin-bottom:16px;
+    margin-bottom: -10px !ie; /* hack for IE8 */
+}
+
+.formText50
+{
+    width: 50px;
+}
+
+.formText60
+{
+    width: 60px;
+}
+
+.formLastDropdown
+{
+    width: 140px;
+}
+
+.formLargeTextBox
+{
+    width: 800px;
+    height: 150px;
+}
+
+.formButton
+{
+	height:40px;
+	width:145px;
+	font-size:large;
+}
+
+.formButtonLarge
+{
+	height:40px;
+	width:200px;
+	font-size:large;
+}
+
+.formButtonSecondary
+{
+	height:30px;
+	width:150px;
+	font-size:medium;
+}
+.button_cell {
+	font-size:22px;
+	text-align:center;
+	border:outset;
+	border-width:4px;
+	height:50px;
+	background-color: #390;
+	color:#FFF;
+	font-weight:bold;
+}
+
+.button_cell a:link {
+	color: #FFF;
+	text-decoration: none
+}
+
+.button_cell a:visited {
+	color: #FFF;
+	text-decoration: none
+}
+
+.button_cell a:hover {
+	color: #000;
+	text-decoration: none
+}
+
+.text_cell {
+	padding-left:10px;
+	padding-right:10px;
+	font-weight:bold;
+}
+
+table.center {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#footer {
+    clear: both;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 5px;
+    background-color: white;
+    border-top: 1px solid black;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+#footer_2 {
+    margin-left: 10px;
+    margin-right: 10px;
+    border-bottom: 2px solid black;
+}
